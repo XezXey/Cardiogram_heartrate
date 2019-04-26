@@ -1,0 +1,13 @@
+# How to gather data using cardiograms apps
+1. Paired the ticwatch with wearOS or andriod phone bluetooth
+2. Install cardiograms apps
+3. In cardiograms apps, slide to change into workout mode, adjust time and start workout to record as a session
+4. Once records are done and synced. Push a share button to send recorded session to
+1. Share the records from cardiogram application
+2. Access to the given link and change to access the json file
+	Example : Given link - https://cardiogr.am/c/i7blhx?no-cache=1
+		  Changed link - https://cardiogr.am/heart/cardiograms/i7blhx?no-cache=1
+   *** Change from "c" to "heart/cardiograms"
+3. Save the json file
+4. Preprocess to get the .csv file
+	$> python cg_process.py --infile [filename,]
